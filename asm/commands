@@ -1,0 +1,12 @@
+--build
+as hello2.s -o hello2.o
+ld -o hello2 -dynamic-link /lib/ld-linux.so.2 -lc hello2.o
+
+-debug
+as -gstabs -o hello.o hello.s
+ld -o hello hello.o
+
+if you use gcc instead of using as&ld ,you should:
+1._start ==> main
+2.no need to write "-dynamic-link ..." when you call c libaray
+
