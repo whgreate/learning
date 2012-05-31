@@ -14,7 +14,7 @@ sub_dir = '/open-uri1'
 #下载绝对路径
 download_dir = location + sub_dir
 #获取地址
-fetch_url ="http://www.mimikx.com/forumdisplay.php?fid=59"
+fetch_url =""
 
 #搜索所有链接
 def collectLinkUrls(url)
