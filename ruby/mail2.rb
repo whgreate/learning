@@ -18,7 +18,7 @@ def decode_subject(sub)
 end
 
 Net::POP3.start( 'pop.qq.com', 110,
-                 '624906158@qq.com', '13211roy' ){  |pop|
+                 '624906158@qq.com', '' ){  |pop|
   if pop.mails.empty? then
     puts 'no mail.'
   else
